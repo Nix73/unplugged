@@ -87,6 +87,106 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* --------  base header and footer styles  -------- */
+
+  header,
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+
+   }
+
+   /* ------------  header styles  -------- */
+
+
+  header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:wrap;
+
+   }
+
+   header nav{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-flow: row wrap;
+
+   }
+
+   header nav ul {
+    display: flex;
+    justify-content: space-around;
+
+
+   }
+   /* ------------  footer styles  -------- */
+
+   footer {
+
+   }
+   .footer-wrapper {
+
+   }
+   .footer-content {
+
+   }
+   .social {
+
+   }
+
+   .copyright{
+
+   }
+
+   /*  -----------  Mobile Styles - Homepage  ------------ */
+
+   /*   Hero Area   */
+   .hero-area {
+     display: flex;
+     justify-content: center;
+     flex-flow: row wrap;
+
+   }
+   /*   Aside  */
+   aside {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+
+
+   }
+   /* Features */
+   .features {
+     display: flex;
+     Justify-content: center;
+     flex-flow: row wrap;
+
+   }
+   .features-item .features-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+   }
+
+   /* Reviews */
+   .reviews {
+     display: flex;
+     justify-content: center;
+     flex-flow: row wrap;
+     
+
+   }
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
