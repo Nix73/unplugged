@@ -99,12 +99,17 @@ textarea {
    body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color:#e2e3ed;
   text-align: left;
   
+   }
+   img {
+     width: 100%;
    }
 
   ul, ol {
     list-style: none;
+    
   }
 
    a {
@@ -113,30 +118,29 @@ textarea {
      color: #e2e3ed;
      text-transform: uppercase;
      text-decoration: none;
+     font-weight: bold;
     
    }
    h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875rem;
+    font-weight: 500;
   
 
    }
    h3, h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.125rem;
+    font-weight: 500;
+    margin: 20px 0;
   
    }
    p {
      font-size: 0.875rem;
-     line-height: 1.825rem;
+     line-height: 1.285rem;
+   }
 
-   }
-   img {
-     
-   }
-   figure {
-
-   }
+   
    address {
      font-style: normal;
 
@@ -147,15 +151,14 @@ textarea {
 
    }
 
-   .content-wrapper {
-     width: 90%;
-     margin: 50px 0;
-   }
+  
+   
 
    /* --------  base header and footer styles  -------- */
 
   header,
   footer {
+    background: #202322;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,21 +170,21 @@ textarea {
 
   
    header {
-     margin: 1em 0;
+     padding: 15px 0;
    }
 
    header .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow:wrap;
+    flex-flow: row wrap;
     margin: 0;
-
    }
    .header-divider {
      width: 100%;
      height: 1px;
      margin: 10px 0 20px 0;
+     background: white;
    }
 
    header nav{
@@ -189,14 +192,21 @@ textarea {
      justify-content: space-around;
      align-items: center;
      flex-flow: row wrap;
+     font-size: 1.125rem;
+     font-weight: 700;
+     /* text-transform: uppercase; */
      width: 60%;
 
    }
-
    header nav ul {
-    display: flex;
-    justify-content: space-around;;
-    width: 100%;
+     width: 100%;
+     display:flex;
+     justify-content: space-around;
+   }
+
+   header nav ul li {
+     font-size: 1.125rem;
+    
 
 
    }
@@ -204,6 +214,7 @@ textarea {
 
    footer {
      flex-direction: column;
+     text-align: center;
 
    }
    footer p {
@@ -228,7 +239,7 @@ textarea {
      display: flex;
      justify-content: center;
      align-items: center;
-      margin: 0;
+      
    }
 
 
@@ -241,29 +252,81 @@ textarea {
     
 
    /*   Hero Area   */
-   .hero-area {    
+   .hero-area {  
+     min-height: 500px;
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
-    
-     
+      background-image: url(../img/jake-melara-30679-unsplash.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background: #333;
+
 
    }
+    .hero-area h1 {
+      font-family: 'poppins', sans-serif;
+      font-size: 2.25rem;
+      font-weight: 500;
+      line-height: 1.25em;
+
+    }
+    
+    
    /*   Aside  */
    aside {
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
+    background: #527158;
    }
+
+   aside .form {
+    margin-top: 30px;
+  }
+   
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+   
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  
    /* Features */
 
 
    .features {
      display: flex;
      Justify-content: center;
+     align-items: center;
      flex-flow: row wrap;
+     background-image: url(../img/rawpixel-800820-unsplash1.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     background: #333;
 
+   }
+   .features h2 {
+     margin-bottom: 3.75em;
    }
    .features .feature-item {
     display: flex;
@@ -272,12 +335,17 @@ textarea {
     flex-flow: row wrap;
    }
    .features article {
-     width: 55%;
+     width: 60%;
      margin: 30px 0;
+   }
+   .features p {
+     text-align: center;
+     margin: 0 auto;
    }
 
    /* Reviews */
    .reviews {
+     background: #2a423a;
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
@@ -286,20 +354,24 @@ textarea {
      margin-bottom: 40px;
    }
 
-   .review h3 {
+   .reviews h3 {
      width: 55%;
+     margin: 1.25em 0;
    }
 
    /*    About Page */
 
    .mission {
+     background: #527158;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
    }
+   
 
    .contact-section {
+     background: #2a423a;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -308,29 +380,48 @@ textarea {
    .contact-section p{
      margin: 0;
    }
+   .contact-section .content-wrapper h2 {
+     width: 87%;
+   }
+   .contact-content {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex start;
+   }
+   .contact-content h4 {
+     font-size: 1.5em;
 
+   }
    /*   FAQ Page */
 
    .faq {
+     background: #527158;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
-
    }
+
    .faq .content-wrapper {
+     margin: 50px 0 0 0;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
    }
 
-   faq h2 {
+   faq h2 {   
     margin-bottom: 40px;
+    line-height:1rem;
   }
-  
   .faq-content {
     margin-bottom: 50px;
+  }
+
+  
+  .faq-content h4 {
+    margin-bottom: 50px;
+    line-height: 1.333em;
   }
 
 
@@ -432,7 +523,16 @@ textarea {
 
   .content-wrapper {
     max-width: 640px;
-    margin: 0;
+    margin: 100px 0;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    line-height: 1.223em
+  }
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 
   /* Header styles */
@@ -444,6 +544,9 @@ textarea {
     justify-content: space-between;
     width: 100%;
 
+  }
+  a .logo {
+    width: 30%;
   }
   header nav {
     width: 20%;
@@ -457,6 +560,7 @@ textarea {
 
 
 /*  Hero Area */
+
 
 /* Aside */
 
