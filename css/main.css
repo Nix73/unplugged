@@ -261,7 +261,7 @@ textarea {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
-      background: #333;
+      /* background: #333; */
 
 
    }
@@ -322,7 +322,7 @@ textarea {
      background-size: cover;
      background-repeat: no-repeat;
      background-position: center;
-     background: #333;
+     /* background: #333; */
 
    }
    .features h2 {
@@ -410,7 +410,7 @@ textarea {
      flex-flow: row wrap;
    }
 
-   faq h2 {   
+   .faq h2 {   
     margin-bottom: 40px;
     line-height:1rem;
   }
