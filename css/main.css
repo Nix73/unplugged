@@ -693,6 +693,9 @@ aside .content-wrapper {
   width: 45%;
 
 }
+.map figure {
+  padding-bottom: 45%;
+}
 .contact-section .content-wrapper h2 {
   width: 80%;
 }
@@ -798,7 +801,9 @@ aside .content-wrapper {
   /* ==========================================================================
   About Page
   ========================================================================== */
-
+  .map figure {
+    padding-bottom: 37%;
+  }
   .mission h2,
   .contact-section .content-wrapper h2 {
       width: 95%;
