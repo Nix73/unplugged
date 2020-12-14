@@ -206,6 +206,7 @@ textarea {
      width: 100%;
      display:flex;
      justify-content: space-around;
+     padding:0;
    }
 
    header nav ul li {
@@ -237,40 +238,45 @@ textarea {
      display: flex;
      justify-content: space-around;
      align-self: center;
+     
 
    } 
    footer .social-icons p {
+     border-radius: 50px;
+     width: 40px;
+     height: 40px;
      display: flex;
      justify-content: center;
      align-items: center;
-      
+     background-color: #527158; 
+   }
+   footer .social-icons p i {
+     font-size: 1.325em;
    }
 
 
-   footer .copyright{
+   .copyright{
     margin: 20px 0;
-   }
+    font-size: 0.875rem;
+   } 
 
    /*  -----------  Mobile Styles - Homepage  ------------ */
 
     
 
    /*   Hero Area   */
-   .hero-area {  
-     min-height: 500px;
-     display: flex;
-     justify-content: center;
-     flex-flow: row wrap;
-      background-image: url(../img/jake-melara-30679-unsplash.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      /* background: #333; */
-
-
-   }
+   
+   .hero-area {
+    background: url(../img/unplugged-retreat.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
     .hero-area h1 {
-      font-family: 'poppins', sans-serif;
+      font-family: 'poppins', helvetica, Arial, sans-serif;
       font-size: 2.25rem;
       font-weight: 500;
       line-height: 1.25em;
@@ -329,6 +335,11 @@ textarea {
      /* background: #333; */
 
    }
+   .features i {
+    color: white;
+    size: 3.75em;
+    margin-bottom: 50px;
+  }
    .features h2 {
      margin-bottom: 3.75em;
    }
@@ -551,6 +562,7 @@ textarea {
   h3 {
     font-size: 1.5rem;
     line-height: 1.5rem;
+    /* margin: 100px 0 0 0; */
   }
 
   /* Header styles */
@@ -601,9 +613,6 @@ aside .content-wrapper {
 
  /* Features */
  
- .features h2{
-   
- }
 
  .features article {
    display: flex;
@@ -660,7 +669,7 @@ aside .content-wrapper {
  }
 
   footer .contact {
-    margin: 0;
+    margin-bottom: 0;
 
  }
  footer h4 {
@@ -671,9 +680,12 @@ aside .content-wrapper {
    line-height: 1.285em;
  }
 
- footer .copyright {
-   width: 100%;
- }
+ footer .social-icons {
+  width: 12.5em;
+  justify-content: space-between;
+}
+
+  
  
 /* ======================================================
                       About 
@@ -742,18 +754,21 @@ aside .content-wrapper {
   .content-wrapper {
 
     max-width: 960px;
-    /* margin: 0  */
+  
   }
   h2 {
     font-size: 2.25rem;
 
   }
+  
   h3, h4 {
     font-size: 1.875rem;
+    line-height: 1.5em;
   }
   p{
     font-size: 1.125rem;
     line-height: 1.333em;
+    margin: 0;
   }
 
   /*  Hero Area */
@@ -763,6 +778,8 @@ aside .content-wrapper {
   }
 
   /*   Aside   */
+  
+
 
   aside .content-wrapper {
     justify-content: space-around;    
@@ -770,7 +787,7 @@ aside .content-wrapper {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width:30%
+    width:33%;
   }
 
   /*   features  */
@@ -779,28 +796,26 @@ aside .content-wrapper {
     width: 90%;
   }
   .features article {
-    flex-basis: 33%;
+    flex-basis: 40%;
   }
 
-  /*  reviews */
-  /* .reviews {
-    justify-content: center;
-    align-items: space-between;
-
-  } */
+  
 
   .reviews article div {
     width: 45%;
   }
   .reviews h3 {
-    margin: 15px 0;
+    margin:0;
   }
   footer h4 {
     font-size: 1.875rem;
   }
+
+
   /* ==========================================================================
   About Page
   ========================================================================== */
+ 
   .map figure {
     padding-bottom: 37%;
   }
@@ -813,9 +828,13 @@ aside .content-wrapper {
     font-size: 1.875rem;
   }
 
+
+
   /* ==========================================================================
   FAQ Page
   ========================================================================== */
+  
+  
   .faq h2 {
     width: 100%;
     font-size:3rem;
