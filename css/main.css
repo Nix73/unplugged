@@ -178,15 +178,20 @@ footer p {
 
 /**** ASIDE ****/
 
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 aside .content-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  flex-flow: column wrap;
-  flex-basis: 50%;
+  flex-flow: row wrap;
+  width: 90%;
 }
 aside .form {
-  margin-top: 30px;
 }
 
 aside .form input {
@@ -237,17 +242,12 @@ aside .form input {
 /******  About Page  *****/
 
 .mission {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+  width: 90%;
 }
 
 .contact-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+}
+.contact-content {
 }
 
 .contact-content p {
@@ -371,9 +371,6 @@ aside .form input {
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   /*** Header ***/
@@ -398,42 +395,134 @@ aside .form input {
   header nav ul {
     justify-content: space-between;
   }
-  /*** Aside ****/
+
+  /****  HERO AREA ****/
+
+  /*** ASIDE ****/
 
   aside .content-wrapper {
-    justify-content: space-between;
-  }
-
-  /**** features ****/
-  .features .content-wrapper {
+    margin: 50px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
   }
+  aside .content-wrapper .form-description {
+    width: 40%;
+    margin: 0;
+  }
+
+  aside .content-wrapper .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  /**** features ****/
 
   .features article {
     justify-content: space-between;
     align-items: center;
     flex-flow: column wrap;
     flex-basis: 50%;
-    margin: 20px 0;
-    
   }
-  .features .item-description {
-    width: 40%;
-    
+  .features .features-item-description {
+    width: 50%;
   }
 
   /**** Review ****/
-  .reviews .content-wrapper {
+
+  .reviews article {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  /**** FAQ  *****/
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
+  /****  ABOUT ****/
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /***** FOOTER  *****/
+
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
+    width: 100%;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  .contact .social {
+    flex-basis: 40%;
+  }
+  footer .copyright {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 1200px) {
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /**** Features *****/
+
+  .features article {
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 33%;
+    margin: 20px 0;
+  }
+
+  /*** ABOUT PAGE ***/
 }
 
 /* ==========================================================================
