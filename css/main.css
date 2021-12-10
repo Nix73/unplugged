@@ -92,6 +92,13 @@ textarea {
   margin: 50px 0;
 }
 /********** HEADER AND FOOTER STYLES *********/
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 header,
 footer {
@@ -104,7 +111,7 @@ footer {
 /*** header ****/
 
 header {
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 header .content-wrappper {
@@ -135,38 +142,36 @@ header nav ul {
   width: 100%;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 /***  FOOTER ****/
 
 footer {
   flex-direction: column;
-  text-align: center;
-}
-
-footer .social-icon {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-footer .social p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
 }
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-content {
+  text-align: center;
+}
 footer p {
   margin: 0;
 }
+footer .copyright {
+  margin: 20px 0;
+}
 
+/*  -----------Mobile Styles - Homepage -------  */
 /**** Hero ****/
 
 .hero-area {
@@ -184,18 +189,15 @@ aside {
   align-items: center;
   flex-flow: row wrap;
 }
-aside .content-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 90%;
+
+aside .form-description {
 }
 aside .form {
 }
 
 aside .form input {
   width: 100%;
+  margin: 10px 0;
 }
 
 /**** FEATURES ***/
@@ -218,6 +220,7 @@ aside .form input {
 }
 .features article {
   width: 63%;
+  margin: 30px 0;
 }
 .feature p {
   margin: 0;
@@ -245,11 +248,6 @@ aside .form input {
   width: 90%;
 }
 
-.contact-section {
-}
-.contact-content {
-}
-
 .contact-content p {
   margin: 0;
 }
@@ -268,7 +266,7 @@ aside .form input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0;
+  margin: 50px 0 0 0;
 }
 .faq h2 {
   margin-bottom: 50px;
@@ -377,11 +375,15 @@ aside .form input {
 
   header {
     justify-content: space-around;
+    padding: 33px 0;
   }
 
   header .content-wrappper {
     justify-content: space-between;
     width: 100%;
+  }
+  header figure {
+    width: 30%;
   }
 
   .header-divider {
@@ -389,7 +391,7 @@ aside .form input {
   }
 
   header nav {
-    width: 25%;
+    width: 20%;
   }
 
   header nav ul {
@@ -404,12 +406,11 @@ aside .form input {
     margin: 50px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-flow: row wrap;
   }
   aside .content-wrapper .form-description {
     width: 40%;
-    margin: 0;
+    margin-bottom: 0;
   }
 
   aside .content-wrapper .form {
@@ -420,13 +421,14 @@ aside .form input {
   /**** features ****/
 
   .features article {
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-flow: column wrap;
     flex-basis: 50%;
   }
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
   /**** Review ****/
@@ -474,7 +476,7 @@ aside .form input {
   .contact-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
   /***** FOOTER  *****/
@@ -489,7 +491,6 @@ aside .form input {
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-    width: 100%;
   }
 
   footer .contact {
@@ -507,24 +508,37 @@ aside .form input {
   .content-wrapper {
     max-width: 1200px;
     margin: 100px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   /**** Features *****/
 
   .features article {
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: column wrap;
     flex-basis: 33%;
     margin: 20px 0;
   }
 
-  /*** ABOUT PAGE ***/
-}
+  .features h2 {
+    width: 90%;
+  }
 
+  /****** reviews *****/
+  .reviews article div {
+    width: 42%;
+  }
+
+  /*** ABOUT  ***/
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 70%;
+  }
+
+  /*** FAQ ****/
+
+  .faq h2 {
+    width: 100%;
+  }
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
