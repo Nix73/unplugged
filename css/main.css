@@ -132,8 +132,9 @@ p {
 img {
   width: 100%;
 }
-figure {
-}
+/*figure {
+  width: 100%
+}*/
 
 address {
   font-style: normal;
@@ -243,10 +244,9 @@ footer .copyright {
   align-items: center;
   flex-flow: row wrap;
   color: white;
-  background-image: url("../img/jake-melara-30679-unsplash.jpg");
-  background-position: center;
+  background: url("../img/jake-melara-30679-unsplash.jpg") center no-repeat #333;
   background-size: cover;
-  height: 600px;
+  /*height: 600px;*/
 }
 .hero-area h1 {
   margin-bottom: 18.75em;
@@ -301,7 +301,7 @@ aside .form input {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-image: url("../img/rawpixel-800820-unsplash1.jpg");
+  background: url("../img/rawpixel-800820-unsplash1.jpg") center no-repeat #333;
   background-size: cover;
   color: white;
 }
