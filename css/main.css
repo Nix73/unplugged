@@ -221,22 +221,32 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  
+  
 }
 footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40%;
+  height: 40%;
+  background:#527158;
+  border-radius: 50%;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 .footer-content {
   text-align: center;
 }
 footer p {
   margin: 0;
-  padding: 30px 0;
-  text-align: center;
+  
 }
 footer .copyright {
   margin: 20px 0;
+  text-align: center;
 }
 
 /*  -----------Mobile Styles - Homepage -------  */
@@ -320,12 +330,19 @@ aside .form input {
   align-items: center;
   flex-flow: row wrap;
 }
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
 .features article {
   width: 63%;
   margin: 30px 0;
+  text-align: center;
 }
 .feature p {
   margin: 0;
+  text-align: center;
 }
 
 /**** REVIEWS ***/
@@ -505,16 +522,16 @@ aside .form input {
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     line-height: 1.5em;
   }
 
   h2 {
-    font-size: 2.25em;
+    font-size: 2.125em;
   }
 
   h3 {
-    font-size: 1.5em;
+    font-size: 1.85em;
   }
   h4,
   p {
@@ -598,9 +615,17 @@ aside .form input {
     align-items: center;
     flex-flow: column wrap;
   }
-  .reviews h2 {
-    width: 100%;
-    font-size: 2.25em;
+
+  .reviews div {
+    padding-left: 2em;
+  }
+  .reviews h3 {
+    width: 70%;
+    font-size: 1.25em;
+    margin: 0;
+  }
+  .reviews p {
+    line-height: 1.5em;
   }
 
   .reviews article {
@@ -688,10 +713,10 @@ aside .form input {
     font-size: 3.75em;
   }
   h2 {
-    font-size: 2.25em;
+    font-size: 3em;
   }
   h3 {
-    font-size: 1.875em;
+    font-size: 2em;
   }
   h4 {
     font-size: 1.25em;
@@ -715,12 +740,22 @@ aside .form input {
   }
 
   .features h2 {
-    width: 90%;
+    width: 100%;
   }
 
   /****** reviews *****/
+
+  .reviews .content-wrapper {
+    align-items: flex-start;
+  }
   .reviews article div {
-    width: 42%;
+    width: 45%;
+  }
+  .reviews h2 {
+    text-align: left;
+  }
+  .reviews h3 {
+    font-size: 2em;
   }
 
   /*** ABOUT  ***/
