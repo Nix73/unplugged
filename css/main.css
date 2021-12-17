@@ -103,8 +103,6 @@ ol {
   margin: 0;
 }
 
-/*Not sure if this next ul li should rather be the a **/
-
 a {
   color: #e2e3ed;
   text-decoration: none;
@@ -221,16 +219,14 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
-  
 }
 footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
-  height: 40%;
-  background:#527158;
+  width: 40px;
+  height: 40px;
+  background: #527158;
   border-radius: 50%;
 }
 
@@ -241,8 +237,7 @@ footer .social-icons p i {
   text-align: center;
 }
 footer p {
-  margin: 0;
-  
+  line-height: 1.5em;
 }
 footer .copyright {
   margin: 20px 0;
@@ -261,7 +256,7 @@ footer .copyright {
   color: white;
   background: url("../img/jake-melara-30679-unsplash.jpg") center no-repeat #333;
   background-size: cover;
-  /*height: 600px;*/
+  height: 600px;
 }
 .hero-area h1 {
   margin-bottom: 18.75em;
@@ -533,10 +528,14 @@ aside .form input {
   h3 {
     font-size: 1.85em;
   }
-  h4,
-  p {
-    font-size: 0.875em;
+  h4 {
+    font-size: 1.5em;
     line-height: 1.125em;
+  }
+
+  p {
+    font-size: 1.25em;
+    line-height: 1.625em;
   }
 
   /*** Header ***/
@@ -569,7 +568,21 @@ aside .form input {
     padding: 0;
   }
   header nav ul li {
-    font-size: 1em;
+    font-size: 1.25em;
+  }
+
+  footer .social-icons p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #527158;
+    border-radius: 50%;
+  }
+
+  footer .social-icons p i {
+    font-size: 1.875em;
   }
 
   /****  HERO AREA ****/
@@ -603,8 +616,13 @@ aside .form input {
     flex-flow: column wrap;
     flex-basis: 50%;
   }
+
   .features .features-item-description {
     width: 62%;
+  }
+
+  .features i {
+    font-size: 4em;
   }
 
   /**** Review ****/
@@ -613,7 +631,10 @@ aside .form input {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
+  }
+  .reviews .content-wrapper h2 {
+    width: 100%;
   }
 
   .reviews div {
@@ -699,6 +720,11 @@ aside .form input {
   .contact .social {
     flex-basis: 40%;
   }
+
+  footer .social-icons {
+    width: 16.5em;
+    justify-content: space-between;
+  }
   footer .copyright {
     width: 100%;
   }
@@ -719,13 +745,23 @@ aside .form input {
     font-size: 2em;
   }
   h4 {
-    font-size: 1.25em;
+    font-size: 1.875em;
   }
 
   p {
     font-size: 1.125em;
     line-height: 1.5em;
   }
+
+  /**** Header and Footer styles***/
+
+  footer.social-icons p {
+    width: 60px;
+    height: 60px;
+    background: #527158;
+    border-radius: 50%;
+  }
+
   /*** Hero-Area ***/
 
   .hero-area h1 {
@@ -743,6 +779,10 @@ aside .form input {
     width: 100%;
   }
 
+  .features i {
+    font-size: 4.375em;
+  }
+
   /****** reviews *****/
 
   .reviews .content-wrapper {
@@ -758,11 +798,15 @@ aside .form input {
     font-size: 2em;
   }
 
+  footer p {
+    line-height: 1.5em;
+  }
+
   /*** ABOUT  ***/
 
   .mission h2,
   .contact-section .content-wrapper h2 {
-    width: 70%;
+    width: 80%;
   }
 
   /*** FAQ ****/
