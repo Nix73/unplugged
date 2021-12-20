@@ -346,6 +346,8 @@ aside .form input {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
+  color: white;
 }
 
 .reviews h2 {
@@ -568,7 +570,7 @@ aside .form input {
     padding: 0;
   }
   header nav ul li {
-    font-size: 1.25em;
+    font-size: 1em;
   }
 
   footer .social-icons p {
@@ -646,7 +648,7 @@ aside .form input {
     margin: 0;
   }
   .reviews p {
-    line-height: 1.5em;
+    line-height: 1.25em;
   }
 
   .reviews article {
@@ -656,10 +658,13 @@ aside .form input {
 
   .reviews article div {
     width: 49%;
-    margin: 0;
   }
-  .reviews img {
+  .reviews article figure {
     width: 49%;
+  }
+
+  .reviews img {
+    width: 100%;
   }
 
   /**** FAQ  *****/
@@ -755,6 +760,9 @@ aside .form input {
 
   /**** Header and Footer styles***/
 
+  header nav ul li {
+    font-size: 1.125em;
+  }
   footer.social-icons p {
     width: 60px;
     height: 60px;
@@ -796,6 +804,9 @@ aside .form input {
   }
   .reviews h3 {
     font-size: 2em;
+  }
+  .reviews p {
+    font-size: 1.5em;
   }
 
   footer p {
