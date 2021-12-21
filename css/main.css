@@ -183,7 +183,6 @@ header figure {
 }
 
 header nav {
-  width: 60%;
   font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
@@ -196,7 +195,6 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
-  margin-left: 10.312em;
 }
 
 header nav ul li {
